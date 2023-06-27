@@ -1,11 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Lista de tareas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    fdfdd
+
+    <div class="container mt-5">
+        <div class="container mt-3 d-flex">
+            <h3 class="titulo">
+                Lista de tareas
+            </h3>
+        </div>
+        <div class="container formulario my-3">
+            <div id="divAlerta" style="display: none;" class="alert alert-danger" role="alert">
+                Ingrese una tarea
+            </div>
+            <form id="formulario">
+                <input type="text" id="inputTarea" class="form-control my-3">
+                <button id="btnGuardar" class="btn btn-success"> Guardar </button>
+            </form>
+        </div>
+        <div id="listaTareas">
+            <div class="alert alert-light" role="alert">
+                <b>Tarea 1</b>
+                <span class="acciones">
+                    <button class="btn btn-success">Hecho</button>
+                    <button class="btn btn-danger">Eliminar</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+
+    <script defer src="index.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
